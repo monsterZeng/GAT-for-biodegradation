@@ -76,7 +76,7 @@ def fit(args, model, graphs):
     return model(graphs, node_feats)
 ```
 
-## 1. If you just want to predict a few of chemicls.
+## 1. If you just want to predict a few of chemicals.
 
 
 ```python
@@ -106,6 +106,7 @@ myGAT.load_state_dict(torch.load(args.model_file, map_location=torch.device('cpu
 ```python
 output, readout, att = fit(args, myGAT, bg)
 torch.argmax(output, dim=1)
+# Zero represents ready biodegradation and one is non-ready biodegradation.
 ```
 
 
@@ -115,7 +116,7 @@ torch.argmax(output, dim=1)
 
 
 
-## 2. If you want to predict a large number of chemicals, I suggest take those chemicals into a file of csv.
+## 2. If you want to predict for a large number of chemicals, I suggest you should compile those chemicals into a csv file.
 
 
 ```python
@@ -128,24 +129,10 @@ data_file.head()
 
 
 
-<div>
-<<<<<<< HEAD
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-    
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-=======
 
->>>>>>> 4ae99f8abd9dd9ace40ba15a4ad82d36c5fc0d46
+
+>>>>>>> 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
