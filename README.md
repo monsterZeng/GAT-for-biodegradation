@@ -129,10 +129,15 @@ data_file.head()
 
 
 
+<<<<<<< HEAD
 
 
 
 >>>>>>> 
+=======
+<div>
+
+>>>>>>> 76a901b525ffb0037d752048301cd2905daed59e
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
