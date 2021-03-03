@@ -1,3 +1,25 @@
+# Install  
+
+For using Graph Neural Network to predict chemical biodegradation, you will install some package. The key packages on this research are be listed below:
+
+RDKit: [Open-Source Cheminformatics Software.](http://www.rdkit.org/) 
+
+PyTorch: [An open source machine learning framework.](https://pytorch.org/) 
+
+DGL: [DEEP GRAPH LIBRARY.](https://www.dgl.ai/)
+
+DGL-LifeSci: [Bringing Graph Neural Networks to Chemistry and Biology](https://lifesci.dgl.ai/index.html)
+
+You can easily install the environment on this research using conda.
+
+```
+conda env create -f environment.yml 
+```
+
+
+
+# How to use?
+
 ```python
 import dgl
 from dgllife.utils import smiles_to_bigraph, CanonicalAtomFeaturizer, CanonicalBondFeaturizer
@@ -115,7 +137,7 @@ data_file.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -202,7 +224,7 @@ def get_dataloader(df, batch_size, collate_fn):
                                  node_featurizer = None,
                                  edge_featurizer = None,
                                  smiles_column='Smiles', 
-                                 cache_file_path="./degradation_valid.bin")
+                                 cache_file_path="./degradation_example.bin")
     if not get_dataset:
         return DataLoader(dataset = dataset, batch_size = batch_size, shuffle = shuffle, collate_fn = collate_fn)
     else:
@@ -218,7 +240,7 @@ dataset = MoleculeCSVDataset(df = data_file,
                                  node_featurizer = None,
                                  edge_featurizer = None,
                                  smiles_column='smiles', 
-                                 cache_file_path="./degradation_dataset.bin")
+                                 cache_file_path="./degradation_example.bin")
 data_loader = DataLoader(dataset = dataset, batch_size = batch_size, collate_fn = collate_molgraphs)
 ```
 
@@ -383,61 +405,61 @@ draw(draw_list,  dataset, myGAT, col=None)
 
 
 
-    
+
 ![svg](output_19_1.svg)
     
 
 
 
-    
+
 ![svg](output_19_2.svg)
     
 
 
 
-    
+
 ![svg](output_19_3.svg)
     
 
 
 
-    
+
 ![svg](output_19_4.svg)
     
 
 
 
-    
+
 ![svg](output_19_5.svg)
     
 
 
 
-    
+
 ![svg](output_19_6.svg)
     
 
 
 
-    
+
 ![svg](output_19_7.svg)
     
 
 
 
-    
+
 ![svg](output_19_8.svg)
     
 
 
 
-    
+
 ![svg](output_19_9.svg)
     
 
 
 
-    
+
 ![svg](output_19_10.svg)
     
 
