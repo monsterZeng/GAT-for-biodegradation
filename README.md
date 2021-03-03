@@ -125,16 +125,6 @@ import pandas as pd
 data_file = pd.read_csv(args.example_file)
 data_file.head()
 ```
-
-
-
-
-<<<<<<< HEAD
-
-
-
->>>>>>> 
-=======
 <div>
 
 >>>>>>> 76a901b525ffb0037d752048301cd2905daed59e
