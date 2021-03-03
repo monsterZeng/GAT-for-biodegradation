@@ -130,19 +130,7 @@ data_file.head()
 
 <div>
 <<<<<<< HEAD
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-    
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 =======
 
 >>>>>>> 4ae99f8abd9dd9ace40ba15a4ad82d36c5fc0d46
