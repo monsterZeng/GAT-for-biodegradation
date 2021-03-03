@@ -129,6 +129,7 @@ data_file.head()
 
 
 <div>
+<<<<<<< HEAD
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -142,6 +143,9 @@ data_file.head()
         text-align: right;
     }
 </style>
+=======
+
+>>>>>>> 4ae99f8abd9dd9ace40ba15a4ad82d36c5fc0d46
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
