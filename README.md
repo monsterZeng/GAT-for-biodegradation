@@ -104,6 +104,7 @@ myGAT.load_state_dict(torch.load(args.model_file, map_location=torch.device('cpu
 
 
 ```python
+## step 3: fit
 output, readout, att = fit(args, myGAT, bg)
 torch.argmax(output, dim=1)
 # Zero represents ready biodegradation and one is non-ready biodegradation.
